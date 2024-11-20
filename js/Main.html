@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My JavaScript Website</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            height: 17em;
+            padding: 20px;
+            background-image: url("puppy.gif");
+            background-size: cover;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Welcome to My Website</h1>
+    </header>
+    
+    <main>
+        <section id="content">
+            <p>This is some content that will be manipulated by JavaScript.</p>
+        </section>
+        <button onclick="changeHeaderColor()">Change Header Color</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+    <script>
+        function changeHeaderColor() {
+            const header = document.getElementById('header');
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); // Generate a random hex color
+            header.style.backgroundColor = randomColor;
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const content = document.getElementById('content');
+            content.innerHTML = "<p>This content is changed by JavaScript!</p>";
+        });
+    </script>
+</body>
+</html>

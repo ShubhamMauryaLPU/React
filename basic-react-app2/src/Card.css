@@ -1,0 +1,12 @@
+.mainDiv{
+    height: 300px;
+    width: 170px;
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+img{
+    height: 200px;
+    width: 100%;
+}

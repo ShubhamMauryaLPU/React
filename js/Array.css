@@ -1,0 +1,16 @@
+/* #div1{
+    height: 300px;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    border: double black 2px;
+    display: lnline-block;
+} */
+
+div {
+    margin: 200px auto;
+    width: 100px;
+    height: 100px;
+    border: 10px double black;
+    text-align: center;
+}

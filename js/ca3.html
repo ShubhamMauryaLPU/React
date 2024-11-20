@@ -1,0 +1,54 @@
+<!-- sum of all numbers user want; -->
+<!-- count no. of times it clicked; -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .main {
+      text-align: center;
+      margin-top: 50px;
+      background-color: antiquewhite;
+      padding: 30px;
+      border: double red;
+    }
+    #clickButton {
+      padding: 5px 20px;
+      color: white;
+      background-color: orange;
+      border: none;
+      border-radius: 20px;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div>Number is <span id="num"> </span></div>
+      <div>Sum of number is <span id="result"></span></div>
+
+      <br />
+      <div>
+        <button id="clickButton" onclick="countIt()">Click me</button>
+        <p>You have clicked <span id="clickCount">0</span> times.</p>
+      </div>
+    </div>
+    <script>
+      let num = prompt("Enter Number");
+      let sum = 0;
+      for (let i = 1; i <= num; i++) {
+        sum = sum + i;
+      }
+      document.getElementById("num").innerHTML = num;
+      document.getElementById("result").innerHTML = sum;
+      console.log(sum);
+
+      let count = 0;
+      function countIt() {
+        count++;
+        document.getElementById("clickCount").innerHTML = count;
+      }
+    </script>
+  </body>
+</html>

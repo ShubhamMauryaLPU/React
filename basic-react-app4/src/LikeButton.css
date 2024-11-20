@@ -1,0 +1,19 @@
+.mainDiv{
+    height: 150px;
+    width: 400px;
+    display: flex;
+    border: 2px solid white;
+    padding: 10px 5px 10px 5px;
+}
+img{
+    width: 50%;
+    border-radius: 8px;
+}
+.innerDiv1{
+    text-align: left;
+    padding-left: 10px;
+}
+.like{
+    align-self: center ;
+    padding-left: 20px;
+}

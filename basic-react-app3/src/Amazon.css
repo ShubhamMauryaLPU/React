@@ -1,0 +1,21 @@
+.mainDiv{
+    height: 300px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: lightblue;
+    display: inline-block;
+    margin-left: 50%;
+}
+.innerDiv{
+    height: 250px;
+    width: 100%;
+    background-color: rgb(145, 145, 50);
+}
+span{
+    text-decoration: line-through;
+}
+img{
+    height: 150px;
+    width: 100%;
+}

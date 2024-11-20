@@ -1,0 +1,14 @@
+.mainDiv{
+    margin: 0 auto;
+    width: 600px;
+    padding: 20px;
+    height: 400px;
+}
+.mainDiv input{
+    padding: 10px;
+}
+.mainDiv button{
+    width: 70px;
+    padding: 10px;
+    margin: 10px;
+}
